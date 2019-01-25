@@ -19,8 +19,7 @@
                                     <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
                                 </div>
                                 <div class="card__content">
-                                    <h2 class="product__price">$
-                                        <%= product.price %>
+                                    <h2 class="product__price">$<%= product.price %>
                                     </h2>
                                     <p class="product__description">
                                         <%= product.description %>
@@ -28,6 +27,9 @@
                                 </div>
                                 <div class="card__actions">
                                     <form action="/add-to-cart" method="POST">
+                                        <a class="btn" href="/products/<%= product.id %>">
+                                            Details
+                                        </a>
                                         <button class="btn">Add to Cart</button>
                                     </form>
                                 </div>
