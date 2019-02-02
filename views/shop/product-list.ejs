@@ -30,8 +30,8 @@
                                         <a class="btn" href="/products/<%= product.id %>">
                                             Details
                                         </a>
-                                        <button class="btn">Add to Cart</button>
                                     </form>
+                                    <%- include('../includes/add-to-cart.ejs', { product: product }) %>
                                 </div>
                             </article>
                             <% } %>
